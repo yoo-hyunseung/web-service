@@ -40,7 +40,9 @@ dependencies { //개발에 필요한 의존성들을 선언한 곳 (버전을 �
     implementation("org.mariadb.jdbc:mariadb-java-client")
     implementation('com.h2database:h2')
     testImplementation('org.springframework.boot:spring-boot-starter-test')
-
+    testImplementation('org.springframework.security:spring-security-test')
+    implementation('org.springframework.boot:spring-boot-starter-oauth2-client')
+    implementation('org.springframework.session:spring-session-jdbc')
 }
 test {
     useJUnitPlatform()
